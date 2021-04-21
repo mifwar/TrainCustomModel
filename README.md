@@ -1,13 +1,20 @@
 # TrainCustomModel - Introduction
 This repository will explain you the way to train your custom object detection model using tensorflow via google colab (FREE GPU). This tutorial is a combination of several tutorial below:
 
-#### 1. [How to train custom object detection model using Google Colab (Free GPU) Part 1](https://www.youtube.com/watch?v=f2ccs2xziLk)
-#### 2. [How to train custom object detection model using Google Colab (Free GPU) Part 2](https://www.youtube.com/watch?v=5qQB8dZRgXQ)
-#### 3. [How to train custom object detection model using Google Colab (Free GPU) Part 3](https://www.youtube.com/watch?v=SMis3UjTIBY)
-#### 4. [How to Train a Custom Model for Object Detection (Local and Google Colab!)](https://www.youtube.com/watch?v=_gGI91BmIdk)
+1. [How to train custom object detection model using Google Colab (Free GPU) Part 1](https://www.youtube.com/watch?v=f2ccs2xziLk)
+2. [How to train custom object detection model using Google Colab (Free GPU) Part 2](https://www.youtube.com/watch?v=5qQB8dZRgXQ)
+3. [How to train custom object detection model using Google Colab (Free GPU) Part 3](https://www.youtube.com/watch?v=SMis3UjTIBY)
+4. [How to Train a Custom Model for Object Detection (Local and Google Colab!)](https://www.youtube.com/watch?v=_gGI91BmIdk)
 
+![Pose Estimator Analyzer](results/result.gif "Result of Custom Training")
 
-<br><center>![Pose Estimator Analyzer](results/result.gif "Result of Custom Training")</center></br>
+## Contents
+- [TrainCustomModel - Introduction](#traincustommodel---introduction)
+  - [Contents](#contents)
+  - [LabelImg Setup](#labelimg-setup)
+    - [Windows](#windows)
+    - [Linux](#linux)
+  - [Labeling Instruction](#labeling-instruction)
 
 ## LabelImg Setup
 
@@ -45,3 +52,56 @@ eros
 ```
 
 4.  To run labelImg, you can type `python3 labelImg.py` in your terminal inside labelImg folder
+
+## Labeling Instruction
+1. First, you need to create two folders: train and test
+   <figure>
+   <center><img src="step/split.png" alt="create two folders"/></center>
+   <center><figcaption>create two folders</figcaption></center>
+   </figure>
+
+2. Split your images into two folder
+   <figure>
+   <center><img src="step/split_two.png" alt="Split your images into two folder"/></center>
+   <center><figcaption>Split your images into two folder</figcaption></center>
+   </figure>
+
+   **note**: you need to put 80% of your images to `train` folder and put the rest of it to `test` folder (i only put three images as an example). Also make sure that all of your object target is exist in both folder.
+
+3. Open your labelImg and make sure that your save format is `PascalVOC`
+   <figure>
+   <center><img src="step/labelImg.png" alt="make sure your save format is PascalVOC"/></center>
+   <center><figcaption>make sure your save format is PascalVOC</figcaption></center>
+   </figure>
+
+4. Click `Open Dir` and select your folder. I started it with `test` folder
+   <figure>
+   <center><img src="step/opendir.png" alt="Click Open Dir and select your folder"/></center>
+   <center><figcaption>Click Open Dir and select your folder</figcaption></center>
+   </figure>
+
+5. Click `Change Save Dir` and select the same folder that you opened in previous step
+   <figure>
+   <center><img src="step/change_save_dir.png" alt="Click Change Save Dir and select your folder"/></center>
+   <center><figcaption>Click Change Save Dir and select your folder</figcaption></center>
+   </figure>
+
+6. Click `view` and select `auto save mode`
+
+7. Start annotate your images. Click <kbd>W</kbd> to create rectangle. Click <kbd>D</kbd> to move to the next image, and Click <kbd>A</kbd> to move to the previous image
+
+8. Select your object label
+
+    <figure>
+   <center><img src="step/bounding.png" alt="Select your object label"/></center>
+   <center><figcaption>Select your object label</figcaption></center>
+   </figure>
+
+9. If you are done with all of images in `test` folder, you can repeat step **4** with `train` folder
+    
+10. If you did it in a correct way, you will found several xml file inside your `test` and `train` folder
+
+<figure>
+<center><img src="step/generate_xml.png" alt="generate_xml"/></center>
+<center><figcaption>generate_xml</figcaption></center>
+</figure>
