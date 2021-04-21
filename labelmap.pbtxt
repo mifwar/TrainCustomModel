@@ -1,0 +1,29 @@
+item{
+	id: 1
+	name: 'goalpost'
+}
+
+item{
+	id: 2
+	name: 'ball'
+}
+
+item{
+	id: 3
+	name: 'x_line'
+}
+
+item{
+	id: 4
+	name: 't_line'
+}
+
+item{
+	id: 5
+	name: 'l_line'
+}
+
+item{
+	id: 6
+	name: 'eros'
+}
