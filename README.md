@@ -57,13 +57,11 @@ eros
 1. First, you need to create two folders: train and test
    <figure>
    <center><img src="step/split.png" alt="create two folders"/></center>
-   <center><figcaption>create two folders</figcaption></center>
    </figure>
 
 2. Split your images into two folder
    <figure>
    <center><img src="step/split_two.png" alt="Split your images into two folder"/></center>
-   <center><figcaption>Split your images into two folder</figcaption></center>
    </figure>
 
    **note**: you need to put 80% of your images to `train` folder and put the rest of it to `test` folder (i only put three images as an example). Also make sure that all of your object target is exist in both folder.
@@ -71,19 +69,16 @@ eros
 3. Open your labelImg and make sure that your save format is `PascalVOC`
    <figure>
    <center><img src="step/labelImg.png" alt="make sure your save format is PascalVOC"/></center>
-   <center><figcaption>make sure your save format is PascalVOC</figcaption></center>
    </figure>
 
 4. Click `Open Dir` and select your folder. I started it with `test` folder
    <figure>
    <center><img src="step/opendir.png" alt="Click Open Dir and select your folder"/></center>
-   <center><figcaption>Click Open Dir and select your folder</figcaption></center>
    </figure>
 
 5. Click `Change Save Dir` and select the same folder that you opened in previous step
    <figure>
    <center><img src="step/change_save_dir.png" alt="Click Change Save Dir and select your folder"/></center>
-   <center><figcaption>Click Change Save Dir and select your folder</figcaption></center>
    </figure>
 
 6. Click `view` and select `auto save mode`
@@ -94,7 +89,6 @@ eros
 
     <figure>
    <center><img src="step/bounding.png" alt="Select your object label"/></center>
-   <center><figcaption>Select your object label</figcaption></center>
    </figure>
 
 9. If you are done with all of images in `test` folder, you can repeat step **4** with `train` folder
@@ -102,6 +96,5 @@ eros
 10. If you did it in a correct way, you will found several xml file inside your `test` and `train` folder
 
 <figure>
-<center><img src="step/generate_xml.png" alt="generate_xml"/></center>
-<center><figcaption>generate_xml</figcaption></center>
+<center><img src="step/generate_xml.png" alt="generate_xml"/></center
 </figure>
